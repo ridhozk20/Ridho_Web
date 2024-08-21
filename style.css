@@ -609,7 +609,9 @@ body{
         display: none;
     }
     
-
+    .navbar-nav{
+        display: none;
+    }
 
     .order-img{
         display: none;
@@ -628,6 +630,10 @@ body{
 @media only screen and (max-width:767px){
     html{
         font-size: 62.5%;
+    }
+
+    .navbar-nav{
+        display: none;
     }
 
     .skill-content h4{
