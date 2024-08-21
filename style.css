@@ -600,11 +600,27 @@ body{
     html{
         font-size: 62.5%;
     }
+
+    .skill-content h4{
+        display:none;
+    }
+
+    .skill-content p{
+        display:none;
+    }
 }
 
 /* Hp */
 @media only screen and (max-width:767px){
     html{
         font-size: 62.5%;
+    }
+    
+    .skill-content h4{
+        display:none;
+    }
+
+    .skill-content p{
+        display:none;
     }
 }
