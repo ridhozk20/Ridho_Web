@@ -23,3 +23,12 @@ const fadeInElements = document.querySelectorAll('.fade-in');
     };
 
     window.addEventListener('scroll', fadeInOnScroll);
+
+
+
+// toggle class active
+const navbarnav = document.querySelector(".navbar-nav");
+
+document.querySelector("#hb-mn").onclick = () => {navbarNav.classList.toggle("active");
+
+}
