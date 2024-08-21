@@ -5,6 +5,8 @@
 
 }
 
+
+
 *{
     margin:0;
     padding:0;
@@ -18,7 +20,7 @@ body{
     font-family: "Kanit",sans-serif;
     background-color: var(--bg);
     color: #ffffff;
-    min-height: 7000px;
+    min-height: 3000px;
 }
 
 .navbar{
@@ -77,7 +79,7 @@ body{
     color: var(--primary);
 }
 
-#hamburger-menu{
+#hb-mn{
     display: none;
 }
 
@@ -106,7 +108,6 @@ body{
     width: 100%;
     height: 100vh;
     padding: 70px 10% 0;
-    background-image: url("background1.jpg");
 }
 
 .home::after{
@@ -146,8 +147,8 @@ body{
     font-size: 16px;
     opacity: 0;
     animation: slideRight .15s ease forwards;
-    padding: 5px 0 8px;
-    margin: -5px 0;
+    padding: 3px 0 ;
+    margin: -2px 0;
 }
 
 .content{
@@ -231,6 +232,11 @@ body{
     width: 500px;
     height: 600px;
     padding: 0 10%;
+}
+
+.profil-img:hover{
+    transform: rotateX(25px);
+    transition: .5s;
 }
 
 .profil-content{
@@ -381,12 +387,25 @@ body{
 .order{
     padding: 10% 0;
     height: 100vh;
+    display: flex;
+    
 }
 
 .order-content h1{
     color: #0ef;
     font-size: 30px;
     font-weight: 700;
+}
+
+.order-img{
+    filter: drop-shadow(0 0 10px var(--primary));
+    width: 200px;
+    height: 200px;
+    margin: 0 60px;
+}
+
+.contactt{
+    padding: 10px 0;
 }
 
 .order-content h2{
@@ -452,9 +471,39 @@ body{
     }
 }
 
+.order-content .btn-box {
+    align-items: center;
+    display: flex;
+    
+}
+
 .order-content .btn-box a{
-    background: transparent;
     border-color: #0ef;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
+    color:black;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 1000;
+
+}
+
+.order-content .btn-box a:nth-child(2){
+    border-color: #0ef;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 20px;
+    max-width: 1000;
+}
+
+
+.order-content .btn-box a:nth-child(3){
+    border-color: rgb(246, 255, 0);
     letter-spacing: 1px;
     font-size: 24px;
     font-weight: 700;
@@ -469,7 +518,20 @@ body{
     left: 0;
     top: 0;
     height: 100%;
-    background-color: #1900ff;
+    background-color: #f8f8f9;
+    z-index: -1;
+    transition: .5s;
+    position: absolute;
+    content: "";
+
+}
+
+.order-content .btn-box a:nth-child(2):before{
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f1031f;
     z-index: -1;
     transition: .5s;
     position: absolute;
@@ -512,6 +574,19 @@ body{
     justify-content: space-between;
 }
 
+
+.coming-soon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texx{
+    font-size: 36px;
+    font-weight: 700;
+    color:#0ef
+}
+
 /* Media Query */
 /* laptop*/
 @media only sreen and(min-width:992px)and(max-width:1080px){
@@ -537,7 +612,8 @@ body{
     .navbar .navbar-nav.active{
         right: 0;
     }
-    #hamburger-menu{
+
+    #hb-mn{
         display: inline-block;
     }
 
