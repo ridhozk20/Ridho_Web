@@ -602,11 +602,25 @@ body{
     }
 
     .skill-content h4{
-        display:none;
+        display: none;
     }
 
     .skill-content p{
-        display:none;
+        display: none;
+    }
+    
+
+
+    .order-img{
+        display: none;
+    }
+
+    .profil-img{
+        display: none;
+    }
+
+    .home-img{
+        display: none;
     }
 }
 
@@ -615,12 +629,29 @@ body{
     html{
         font-size: 62.5%;
     }
-    
+
     .skill-content h4{
-        display:none;
+        display: none;
     }
 
     .skill-content p{
-        display:none;
+        display: none;
+    }
+    
+
+    .skill-content .foto{
+        display: none;
+    }
+
+    .order-img{
+        display: none;
+    }
+
+    .profil-img{
+        display: none;
+    }
+
+    .home-img{
+        display: none;
     }
 }
