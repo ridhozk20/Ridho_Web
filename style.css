@@ -20,10 +20,10 @@ body{
     font-family: "Kanit",sans-serif;
     background-color: var(--bg);
     color: #ffffff;
-    min-height: 3000px;
+    min-height: 1500px;
 }
 
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,7 +98,7 @@ body{
 
 .nav-extra a:hover{
     color: var(--primary);
-}
+} */
 
 .home{
     position: relative;
@@ -125,7 +125,7 @@ body{
     font-size: 40px;
     font-weight: 700;
     opacity: 0;
-    animation: slideTop .9s ease forwards;
+    animation: slideLeft .9s ease forwards;
 }
 
 .content h3:nth-of-type(2){
@@ -146,17 +146,17 @@ body{
 .content p{
     font-size: 16px;
     opacity: 0;
-    animation: slideRight .15s ease forwards;
+    animation: slideleft .9s ease forwards;
     padding: 3px 0 ;
     margin: -2px 0;
 }
 
 .content{
     opacity: 0;
-    animation: slideLeft .8s ease forwards;
+    animation: slideLeft .9s ease forwards;
 }
 
-.sosmed{
+/* .sosmed{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ body{
     color: var(--bg);
     box-shadow: 0 0 20px #0ef;
     
-}
+} */
 
 .btn {
     display: inline-block;
@@ -253,7 +253,7 @@ body{
 
 .profil-content h3{
     margin: -10px 0 -10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #0ef;
 
@@ -333,7 +333,7 @@ body{
     color: var(--primary);
 }
 
-.skill{
+/* .skill{
     padding: 40px 0;
 }
 
@@ -418,7 +418,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     
-}
+} */
 
 
 
@@ -614,7 +614,7 @@ body{
     }
 
     .order-img{
-        display: none;
+        display: nonez;
     }
 
     .profil-img{
